@@ -1,0 +1,14 @@
+.box {
+  background-color: blueviolet;
+  width: 100vw;
+  height: 50vh;
+}
+
+.box .circle {
+  background-color: yellow;
+  width: 20px;
+  height: 20px;
+  -webkit-animation: nudge 5s linear infinite alternate;
+          animation: nudge 5s linear infinite alternate;
+}
+/*# sourceMappingURL=test.css.map */

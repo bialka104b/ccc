@@ -1,0 +1,130 @@
+* {//sprawdzić czy tu jest gwiazdka
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+  font-weight: 600;
+  color: dodgerblue;
+  font-size: 45px;
+  font-family: 'Langar', cursive;
+}
+
+h3 {
+    font-weight: 900;
+    color: red;
+    font-family: cursive;
+    font-size: 16px;
+}
+.klasa1 {
+    font-size:72px;
+}
+
+/* MOJE */
+.header {
+    background-color: orange;
+    height: 100px;
+    padding: 20px;
+    width: 100%;
+    nav {
+        background-color: red;
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+        a {
+            color:red;
+            text-decoration: none;
+            background-color: orange;
+            margin:3px;
+            padding: 10px;
+            flex-grow: 1;
+            transition:1s;
+        }
+        a:first-of-type{
+            background-color: blue;
+        }
+        a:hover {
+            background-color:red;
+            color:black;
+            transition:3s;
+        }
+    }
+}
+
+.main {
+    background-color: brown;
+    width: 100%;
+    .row1 {//section
+        background-color: blanchedalmond;
+        width: 80%;
+        margin: 0 auto 0 auto;
+        padding: 2%;
+        height: 600px;
+        .box-article {
+            background-color: blue;
+            width: 49.5%;
+            display: inline-grid;
+            height: 100%;
+            .box-image {
+            width: 300px;
+            margin: 0 auto;
+            height: 300px;
+            margin-top: 15px;
+            overflow: hidden;
+            border-radius: 50px;
+                img {
+                    display: block;
+                    width: 100%;
+                    height: 300px;
+                    object-fit: cover;//add (first cover, second contain)
+                }
+                img:hover {
+                    width:120%;
+                    height: 350px;
+                    transition: 3s;
+                }
+                
+                .second-image {
+                    object-position: top;
+                }
+            }
+            .decription {//p
+                padding: 15px;//add
+            }
+            h2 {
+                padding: 15px;
+                text-align: center;
+            }
+        }
+    }
+}
+
+.footer {
+    background-color: rgb(21, 236, 111);
+    padding: 20px;
+    .box-footer {
+        width:60%;
+        margin: 0 auto;
+        i {
+            font-size: 60px;
+            margin: 0 130px;
+            color: white;
+            transition: 2s;
+        }
+        i:hover {
+            color: rgb(71, 10, 240);
+            transition: 2s;
+        }
+    }
+}
+// .footer {
+//     .box-footer {
+//         width: 20%;
+//         margin: 0 auto;
+//         i {
+//             font-size: 40px;
+//             margin: 0px 14px;
+//         }
+//     }
+// }

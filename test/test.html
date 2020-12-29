@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- <link rel="stylesheet" href="../css/test.css"> -->
+    <style>
+        .box {
+            background-color: chartreuse;
+            width: 100vw;
+            height: 50vh;
+            
+        }
+        .square {
+            width: 30px;
+            height: 30px;
+            background-color: black;
+            animation: nudge 5s linear infinite alternate;
+            /* animation-delay: 5s;
+            // animation-iteration-count: infinite;
+            // animation-direction: alternate;
+            // animation-name: nudge; */
+        }
+        .circle {
+            width: 30px;
+            height: 30px;
+            background-color: black;
+            animation: nudge 5s ease infinite alternate;
+            
+        }
+        .tringle {
+            width: 30px;
+            height: 30px;
+            background-color: black;
+            animation: nudge 5s ease-in-out infinite alternate;
+        }
+        @keyframes nudge {
+            /* rotate(0deg) */
+            0% {
+                transform: translate(0, 100px) rotate(0deg);
+            }
+            50% {
+                transform: translate(150px, 150px) rotate(90deg);
+            }
+            100% {
+                transform: translate(-150px, -50px) rotate(-90deg);
+            }
+        }
+        /* @keyframes name {
+            0% {
+                transform: rotate(0deg) ;
+            }
+            50% {
+                transform: rotate(90deg);
+            }
+            100% {
+                transform: rotate(-90deg);
+            }
+        } */
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="box">
+        <div class="square"></div>
+        <div class="circle"></div>
+        <div class="tringle"></div>
+    </div>
+    
+</body>
+</html>

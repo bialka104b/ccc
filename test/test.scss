@@ -1,0 +1,32 @@
+.box {
+  background-color: blueviolet;
+  width: 100vw;
+  height: 50vh;
+  .circle {
+    background-color: yellow;
+    width:20px;
+    height: 20px;
+    animation: nudge 5s linear infinite alternate;
+    // animation-delay: 0s;
+    // animation-iteration-count: infinite;
+    // animation-direction: alternate;
+    // animation-fill-mode: none;
+    // animation-play-state: running;
+    // animation-name: nudge;
+  }
+}
+
+// @keyframes nudge {
+//   0% {
+//     transform: translate(0, 0) rotate(0deg);
+//   }
+  
+//   50% {
+//     transform: translate(150px, 0) rotate(90deg);
+    
+//   }
+  
+//   100% {
+//     transform: translate(-150px, 0);
+//   }
+// }
